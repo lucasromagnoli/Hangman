@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Playground</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+<div class="game-border">
+    <div class="game-painel">
+        <h1 class="header"> Jogo da forca!</h1>
+        <div class="game-warnings"> <span id="warningMessage">Escolha uma opção abaixo.</span></div>
+
+        <div class="game-menu">
+            <div><button type="button" onclick="startGame()">Start</button></div>
+            <div><button type="button">Highscore</button></div>
+        </div>
+
+        <div class="game-step-one">
+            Quantidade de jogadores: <input type="number" value="2" min="2" max="5" id="amountOfPlayers"/>
+            <button type="button" onclick="stepOne(this)">Continuar</button>
+
+            <div class="game-name-player">Nome do jogador 1: <input type="text" id="name-player-1"></div>
+            <div class="game-name-player">Nome do jogador 2: <input type="text" id="name-player-2"></div>
+            <div class="game-name-player">Nome do jogador 3: <input type="text" id="name-player-3"></div>
+            <div class="game-name-player">Nome do jogador 4: <input type="text" id="name-player-4"></div>
+            <div class="game-name-player">Nome do jogador 5: <input type="text" id="name-player-5"></div>
+
+            <button type="button" onclick="stepOne(this)">Começar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+.game-border {
+    width: 50%;
+    height: 860px;
+    border: 2px solid red;
+}
+
+.game-border .game-painel {
+    width: 90%;
+    height: 80%;
+    margin: 5% 0px 0px 5%;
+    border: 1px solid black;
+}
+
+.game-painel .game-warnings {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.game-painel .game-warnings span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: green;
+}
+
+.game-painel h1.header {
+    text-align: center;
+}
+
+/*
+Step 01;
+*/
+.game-step-one {
+    border: 1px solid pink;
+    display: none;
+}
+
+.game-step-one .game-name-player{
+    display: none;
+    margin-top: 10px;
+}
