@@ -31,10 +31,10 @@ function checkName(name){
 
 function stepOne(button){
     /* Aparecer as labels com os respectivos nomes de cada jogador */
-    // Variavel que armazena a quantidade de jogadores informada pelo próprio jogador.
-    var amountOfPlayers = document.getElementById("amountOfPlayers").value;
-    // Variavel que armezena um array que contém todos os 5 divs referente a cada jogador e seu respectivo nome.
-    var amountOfPlayersLabelArray = document.getElementsByClassName("game-name-player");
+    // constiavel que armazena a quantidade de jogadores informada pelo próprio jogador.
+    const amountOfPlayers = document.getElementById("amountOfPlayers").value;
+    // constiavel que armezena um array que contém todos os 5 divs referente a cada jogador e seu respectivo nome.
+    const amountOfPlayersLabelArray = document.getElementsByClassName("game-name-player");
 
     // Verifica se o botão apertado foi o "continuar".
     if (button.textContent.toLowerCase() == "continuar"){
@@ -62,8 +62,8 @@ function stepOne(button){
         }
     // Verifica se o botão apertado foi o "começar".
     } else if (button.textContent.toLowerCase() == "começar") {
-        var foo = 0;
-        var validate = false;
+        const foo = 0;
+        const validate = false;
         for (let index = 0; index < 5; index++) {
             if (amountOfPlayersLabelArray[index].style.display == "block") {
                 foo += 1;
